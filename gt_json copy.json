@@ -1,0 +1,1382 @@
+{
+  "videos": [
+    {
+      "video_id": "1",
+      "events": [
+        {
+          "start": 20,
+          "end": 164,
+          "label": [
+            "esophagus"
+          ]
+        },
+        {
+          "start": 165,
+          "end": 181,
+          "label": [
+            "esophagus"
+          ]
+        },
+        {
+          "start": 182,
+          "end": 183,
+          "label": [
+            "esophagus",
+            "z-line"
+          ]
+        },
+        {
+          "start": 184,
+          "end": 187,
+          "label": [
+            "esophagus"
+          ]
+        },
+        {
+          "start": 188,
+          "end": 193,
+          "label": [
+            "esophagus",
+            "z-line"
+          ]
+        },
+        {
+          "start": 194,
+          "end": 200,
+          "label": [
+            "esophagus"
+          ]
+        },
+        {
+          "start": 201,
+          "end": 207,
+          "label": [
+            "esophagus",
+            "z-line"
+          ]
+        },
+        {
+          "start": 208,
+          "end": 208,
+          "label": [
+            "esophagus"
+          ]
+        },
+        {
+          "start": 209,
+          "end": 558,
+          "label": [
+            "stomach"
+          ]
+        },
+        {
+          "start": 559,
+          "end": 563,
+          "label": [
+            "angiectasia",
+            "stomach"
+          ]
+        },
+        {
+          "start": 564,
+          "end": 615,
+          "label": [
+            "stomach"
+          ]
+        },
+        {
+          "start": 616,
+          "end": 644,
+          "label": [
+            "angiectasia",
+            "stomach"
+          ]
+        },
+        {
+          "start": 645,
+          "end": 750,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 751,
+          "end": 753,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 754,
+          "end": 755,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 756,
+          "end": 757,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 758,
+          "end": 775,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 776,
+          "end": 776,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 777,
+          "end": 915,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 916,
+          "end": 916,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 917,
+          "end": 917,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 918,
+          "end": 918,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 919,
+          "end": 1164,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1165,
+          "end": 1174,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1175,
+          "end": 1304,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1305,
+          "end": 1309,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1310,
+          "end": 1619,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1620,
+          "end": 1622,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1623,
+          "end": 1809,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1810,
+          "end": 1830,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1831,
+          "end": 2283,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2284,
+          "end": 2288,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2289,
+          "end": 2402,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2403,
+          "end": 2429,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2430,
+          "end": 2933,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2934,
+          "end": 2938,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2939,
+          "end": 3333,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3334,
+          "end": 3337,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3338,
+          "end": 3509,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3510,
+          "end": 3550,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3551,
+          "end": 3557,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3558,
+          "end": 3564,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3565,
+          "end": 3570,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3571,
+          "end": 3571,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3572,
+          "end": 3586,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3587,
+          "end": 3590,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3591,
+          "end": 3602,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3603,
+          "end": 3607,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3608,
+          "end": 3609,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3610,
+          "end": 3610,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3611,
+          "end": 7804,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 7805,
+          "end": 7807,
+          "label": [
+            "angiectasia",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 7808,
+          "end": 10114,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 10115,
+          "end": 10141,
+          "label": [
+            "lymphangioectasis",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 10142,
+          "end": 11326,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11327,
+          "end": 11328,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11329,
+          "end": 11335,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11336,
+          "end": 11340,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11341,
+          "end": 11341,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11342,
+          "end": 11358,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11359,
+          "end": 11359,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11360,
+          "end": 11360,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11361,
+          "end": 11365,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11366,
+          "end": 11372,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11373,
+          "end": 11402,
+          "label": [
+            "active bleeding",
+            "blood",
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11403,
+          "end": 11406,
+          "label": [
+            "active bleeding",
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11407,
+          "end": 11414,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11415,
+          "end": 11459,
+          "label": [
+            "active bleeding",
+            "blood",
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11460,
+          "end": 11462,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11463,
+          "end": 11475,
+          "label": [
+            "blood",
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11476,
+          "end": 11476,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11477,
+          "end": 11595,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11596,
+          "end": 11630,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11631,
+          "end": 11633,
+          "label": [
+            "polyp",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11634,
+          "end": 11681,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 11682,
+          "end": 12420,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 12421,
+          "end": 12924,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 12925,
+          "end": 13194,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 13195,
+          "end": 13263,
+          "label": [
+            "blood",
+            "colon"
+          ]
+        },
+        {
+          "start": 13264,
+          "end": 13310,
+          "label": [
+            "colon"
+          ]
+        },
+        {
+          "start": 13311,
+          "end": 13316,
+          "label": [
+            "blood",
+            "colon"
+          ]
+        },
+        {
+          "start": 13317,
+          "end": 13670,
+          "label": [
+            "colon"
+          ]
+        },
+        {
+          "start": 13671,
+          "end": 13672,
+          "label": [
+            "blood",
+            "colon"
+          ]
+        },
+        {
+          "start": 13673,
+          "end": 13677,
+          "label": [
+            "colon"
+          ]
+        },
+        {
+          "start": 13678,
+          "end": 13680,
+          "label": [
+            "angiectasia",
+            "colon"
+          ]
+        },
+        {
+          "start": 13681,
+          "end": 13725,
+          "label": [
+            "colon"
+          ]
+        },
+        {
+          "start": 13726,
+          "end": 13731,
+          "label": [
+            "angiectasia",
+            "colon"
+          ]
+        },
+        {
+          "start": 13732,
+          "end": 15698,
+          "label": [
+            "colon"
+          ]
+        },
+        {
+          "start": 15699,
+          "end": 15701,
+          "label": [
+            "angiectasia",
+            "colon"
+          ]
+        },
+        {
+          "start": 15702,
+          "end": 27730,
+          "label": [
+            "colon"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "10",
+      "events": [
+        {
+          "start": 0,
+          "end": 24,
+          "label": [
+            "blood",
+            "hematin",
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 25,
+          "end": 490,
+          "label": [
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 491,
+          "end": 498,
+          "label": [
+            "blood",
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 499,
+          "end": 499,
+          "label": [
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 500,
+          "end": 670,
+          "label": [
+            "blood",
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 671,
+          "end": 746,
+          "label": [
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 747,
+          "end": 751,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 752,
+          "end": 753,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 754,
+          "end": 765,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 766,
+          "end": 768,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 769,
+          "end": 771,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 772,
+          "end": 832,
+          "label": [
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 833,
+          "end": 837,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 838,
+          "end": 841,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 842,
+          "end": 909,
+          "label": [
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 910,
+          "end": 918,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 919,
+          "end": 1160,
+          "label": [
+            "pylorus",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1161,
+          "end": 1163,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1164,
+          "end": 1278,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1279,
+          "end": 1284,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1285,
+          "end": 1365,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1366,
+          "end": 1416,
+          "label": [
+            "blood",
+            "hematin",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1417,
+          "end": 1425,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1426,
+          "end": 1599,
+          "label": [
+            "hematin",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1600,
+          "end": 1628,
+          "label": [
+            "blood",
+            "hematin",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1629,
+          "end": 1646,
+          "label": [
+            "hematin",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1647,
+          "end": 1672,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1673,
+          "end": 1798,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1799,
+          "end": 1800,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1801,
+          "end": 1804,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1805,
+          "end": 1816,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1817,
+          "end": 1819,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1820,
+          "end": 1831,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1832,
+          "end": 1833,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1834,
+          "end": 1844,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1845,
+          "end": 1847,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1848,
+          "end": 1868,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1869,
+          "end": 1890,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1891,
+          "end": 1944,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1945,
+          "end": 1950,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1951,
+          "end": 1962,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1963,
+          "end": 1964,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 1965,
+          "end": 2168,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2169,
+          "end": 2258,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2259,
+          "end": 2290,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2291,
+          "end": 2305,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2306,
+          "end": 2313,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2314,
+          "end": 2329,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2330,
+          "end": 2343,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2344,
+          "end": 2354,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2355,
+          "end": 2359,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2360,
+          "end": 2375,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2376,
+          "end": 2542,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2543,
+          "end": 2785,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2786,
+          "end": 2800,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2801,
+          "end": 2821,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2822,
+          "end": 2906,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2907,
+          "end": 2925,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2926,
+          "end": 2959,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 2960,
+          "end": 3040,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3041,
+          "end": 3090,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3091,
+          "end": 3100,
+          "label": [
+            "active bleeding",
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3101,
+          "end": 3141,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3142,
+          "end": 3234,
+          "label": [
+            "active bleeding",
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3235,
+          "end": 3367,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3368,
+          "end": 3394,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3395,
+          "end": 3479,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3480,
+          "end": 3564,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3565,
+          "end": 3587,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3588,
+          "end": 3609,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3610,
+          "end": 3712,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3713,
+          "end": 3735,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3736,
+          "end": 3812,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3813,
+          "end": 3830,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3831,
+          "end": 3887,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3888,
+          "end": 3890,
+          "label": [
+            "active bleeding",
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3891,
+          "end": 3934,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3935,
+          "end": 3944,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3945,
+          "end": 3975,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 3976,
+          "end": 4053,
+          "label": [
+            "active bleeding",
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4054,
+          "end": 4135,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4136,
+          "end": 4255,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4256,
+          "end": 4394,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4395,
+          "end": 4452,
+          "label": [
+            "active bleeding",
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4453,
+          "end": 4534,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4535,
+          "end": 4580,
+          "label": [
+            "blood",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 4581,
+          "end": 7033,
+          "label": [
+            "small intestine"
+          ]
+        },
+        {
+          "start": 7034,
+          "end": 7420,
+          "label": [
+            "hematin",
+            "small intestine"
+          ]
+        },
+        {
+          "start": 7421,
+          "end": 9744,
+          "label": [
+            "blood",
+            "colon"
+          ]
+        }
+      ]
+    }
+  ]
+}

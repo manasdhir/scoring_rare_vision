@@ -2,6 +2,7 @@ import json
 import os
 import streamlit as st
 from collections import defaultdict
+import base64
 
 ALLOWED_LABELS = {
     "mouth",
@@ -122,7 +123,8 @@ if not gt_json_str:
     st.error("GROUND_TRUTH_JSON environment variable not set")
     st.stop()
 
-gt = json.loads(gt_json_str)
+gt_b64 = os.environ.get("GROUND_TRUTH_JSON_BASE64")
+gt = json.loads(base64.b64decode(gt_b64).decode())
 
 pred_file = st.file_uploader("Upload prediction JSON", type=["json"])
 

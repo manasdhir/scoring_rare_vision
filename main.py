@@ -117,12 +117,6 @@ def compute_map(gt, pr, thr):
 
 st.title("Temporal mAP Evaluator")
 
-gt_json_str = os.environ.get("GROUND_TRUTH_JSON")
-
-if not gt_json_str:
-    st.error("GROUND_TRUTH_JSON environment variable not set")
-    st.stop()
-
 gt_b64 = os.environ.get("GROUND_TRUTH_JSON_BASE64")
 gt = json.loads(base64.b64decode(gt_b64).decode())
 

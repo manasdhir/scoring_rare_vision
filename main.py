@@ -115,7 +115,7 @@ def compute_map(gt, pr, thr):
     return sum(video_maps) / len(video_maps)
 
 
-st.title("Temporal mAP Evaluator")
+st.title("ICPR 2026 RARE VISION TEMPORAL mAP EVALUATOR")
 
 # Expandable description for JSON generation
 with st.expander("ℹ️ How to generate the required prediction JSON"):

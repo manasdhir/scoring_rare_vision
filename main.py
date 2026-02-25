@@ -117,6 +117,17 @@ def compute_map(gt, pr, thr):
 
 st.title("Temporal mAP Evaluator")
 
+# Expandable description for JSON generation
+with st.expander("ℹ️ How to generate the required prediction JSON"):
+    st.markdown("""
+    **Using the scripts provided on GitHub**, you can automatically generate the required JSON file from your model's one-hot encoded CSV output.
+    
+    **Process Overview:**
+    1. **Frame-Level Predictions:** Your model initially outputs a CSV where each row corresponds to a frame, and columns represent the one-hot encoded labels.
+    2. **Temporal Grouping:** The provided GitHub script processes this CSV frame-by-frame. When it detects continuous frames where a specific label is active (e.g., `1`), it groups them into a single temporal "event".
+    3. **JSON Structuring:** It calculates the `start` and `end` times/frames for these contiguous blocks and formats the final output into the required hierarchical JSON structure (`videos` -> `events` -> `start`, `end`, `label`) necessary for this mAP evaluator.
+    """)
+
 gt_b64 = os.environ.get("GROUND_TRUTH_JSON_BASE64")
 gt = json.loads(base64.b64decode(gt_b64).decode())
 

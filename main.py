@@ -95,10 +95,13 @@ def average_precision(gt_segs, pr_segs, thr):
     return ap
 
 
-def compute_map(gt, pr, thr):
+def compute_video_maps(gt, pr, thr):
+    """
+    Computes and returns the mAP for each video individually.
+    """
     gt_ev = extract_by_video_label(gt)
     pr_ev = extract_by_video_label(pr)
-    video_maps = []
+    video_maps = {}
 
     for vid in gt_ev:
         aps = []
@@ -110,14 +113,13 @@ def compute_map(gt, pr, thr):
                     thr,
                 )
             )
-        video_maps.append(sum(aps) / len(aps))
+        video_maps[vid] = sum(aps) / len(aps)
 
-    return sum(video_maps) / len(video_maps)
+    return video_maps
 
 
 st.title("ICPR 2026 RARE VISION TEMPORAL mAP EVALUATOR")
 
-# Expandable description for JSON generation
 with st.expander("ℹ️ How to generate the required prediction JSON"):
     st.markdown("""
     **Using the scripts provided on GitHub**, you can automatically generate the required JSON file from your model's one-hot encoded CSV output.
@@ -129,11 +131,15 @@ with st.expander("ℹ️ How to generate the required prediction JSON"):
     """)
 
 gt_b64 = os.environ.get("GROUND_TRUTH_JSON_BASE64")
-gt = json.loads(base64.b64decode(gt_b64).decode())
+if gt_b64:
+    gt = json.loads(base64.b64decode(gt_b64).decode())
+else:
+    st.error("GROUND_TRUTH_JSON_BASE64 environment variable not set.")
+    gt = None
 
 pred_file = st.file_uploader("Upload prediction JSON", type=["json"])
 
-if pred_file:
+if pred_file and gt:
     pr = json.load(pred_file)
     passed, message = sanity_check(gt, pr)
 
@@ -141,5 +147,26 @@ if pred_file:
         st.error(message)
     else:
         st.success(message)
-        st.metric("mAP @ 0.5", round(compute_map(gt, pr, 0.5), 4))
-        st.metric("mAP @ 0.95", round(compute_map(gt, pr, 0.95), 4))
+        
+        maps_05 = compute_video_maps(gt, pr, 0.5)
+        maps_095 = compute_video_maps(gt, pr, 0.95)
+        
+        avg_05 = sum(maps_05.values()) / len(maps_05) if maps_05 else 0.0
+        avg_095 = sum(maps_095.values()) / len(maps_095) if maps_095 else 0.0
+        
+        st.subheader("Overall Averages")
+        col1, col2 = st.columns(2)
+        col1.metric("Overall mAP @ 0.5", round(avg_05, 4))
+        col2.metric("Overall mAP @ 0.95", round(avg_095, 4))
+        
+        st.subheader("Per-Video mAP Breakdown")
+        
+        results = []
+        for vid in sorted(maps_05.keys()):
+            results.append({
+                "Video ID": vid,
+                "mAP @ 0.5": round(maps_05[vid], 4),
+                "mAP @ 0.95": round(maps_095[vid], 4)
+            })
+            
+        st.dataframe(results, use_container_width=True)

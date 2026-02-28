@@ -96,9 +96,6 @@ def average_precision(gt_segs, pr_segs, thr):
 
 
 def compute_video_maps(gt, pr, thr):
-    """
-    Computes and returns the mAP for each video individually.
-    """
     gt_ev = extract_by_video_label(gt)
     pr_ev = extract_by_video_label(pr)
     video_maps = {}
@@ -118,17 +115,59 @@ def compute_video_maps(gt, pr, thr):
     return video_maps
 
 
-st.title("ICPR 2026 RARE VISION TEMPORAL mAP EVALUATOR")
+st.title("ICPR 2026 RARE-VISION TEMPORAL mAP EVALUATOR")
+
+st.markdown("""
+⚠️ **Important:**  
+This evaluator has been developed **exclusively for the ICPR 2026 RARE-VISION Competition**.  
+It is not intended for external benchmarking outside the official competition framework.
+
+---
+
+### 🔗 Official Resources
+
+- 📂 Dataset (GALAR Capsule Endoscopy Dataset):  
+  https://plus.figshare.com/articles/dataset/Galar_-_a_large_multi-label_video_capsule_endoscopy_dataset/25304616  
+
+- 📄 ICPR 2026 RARE-VISION Competition Document & Flyer (includes sample report format):  
+  https://figshare.com/articles/preprint/ICPR_2026_RARE-VISION_Competition_Document_and_Flyer/30884858?file=60375365  
+
+- 💻 Official GitHub Repository (scripts + JSON generation utilities):  
+  https://github.com/RAREChallenge2026/RARE-VISION-2026-Challenge  
+
+---
+
+After computing the mAP scores using this tool,  
+📑 **please refer to the Sample Report format provided in the competition document (see link above)** and include your calculated:
+
+- Overall mAP @ 0.5  
+- Overall mAP @ 0.95  
+- Per-video mAP breakdown  
+
+exactly as specified in the official template.
+""")
+
 
 with st.expander("ℹ️ How to generate the required prediction JSON"):
     st.markdown("""
-    **Using the scripts provided on GitHub**, you can automatically generate the required JSON file from your model's one-hot encoded CSV output.
-    
-    **Process Overview:**
-    1. **Frame-Level Predictions:** Your model initially outputs a CSV where each row corresponds to a frame, and columns represent the one-hot encoded labels.
-    2. **Temporal Grouping:** The provided GitHub script processes this CSV frame-by-frame. When it detects continuous frames where a specific label is active (e.g., `1`), it groups them into a single temporal "event".
-    3. **JSON Structuring:** It calculates the `start` and `end` times/frames for these contiguous blocks and formats the final output into the required hierarchical JSON structure (`videos` -> `events` -> `start`, `end`, `label`) necessary for this mAP evaluator.
-    """)
+Using the scripts provided in the official GitHub repository, you can automatically generate the required JSON file from your model's one-hot encoded CSV output.
+
+**Process Overview:**
+
+1. **Frame-Level Predictions:**  
+   Your model outputs a CSV where each row corresponds to a frame and columns represent one-hot encoded labels.
+
+2. **Temporal Grouping:**  
+   The provided GitHub script processes this CSV frame-by-frame. When continuous frames contain an active label (`1`), they are grouped into a single temporal event.
+
+3. **JSON Structuring:**  
+   The script computes `start` and `end` times/frames for contiguous segments and formats them into the required hierarchical JSON structure:
+
+   `videos → events → start, end, label`
+
+This JSON format is mandatory for evaluation in the ICPR 2026 RARE-VISION competition.
+""")
+
 
 gt_b64 = os.environ.get("GROUND_TRUTH_JSON_BASE64")
 if gt_b64:
@@ -147,20 +186,20 @@ if pred_file and gt:
         st.error(message)
     else:
         st.success(message)
-        
+
         maps_05 = compute_video_maps(gt, pr, 0.5)
         maps_095 = compute_video_maps(gt, pr, 0.95)
-        
+
         avg_05 = sum(maps_05.values()) / len(maps_05) if maps_05 else 0.0
         avg_095 = sum(maps_095.values()) / len(maps_095) if maps_095 else 0.0
-        
+
         st.subheader("Overall Averages")
         col1, col2 = st.columns(2)
         col1.metric("Overall mAP @ 0.5", round(avg_05, 4))
         col2.metric("Overall mAP @ 0.95", round(avg_095, 4))
-        
+
         st.subheader("Per-Video mAP Breakdown")
-        
+
         results = []
         for vid in sorted(maps_05.keys()):
             results.append({
@@ -168,5 +207,5 @@ if pred_file and gt:
                 "mAP @ 0.5": round(maps_05[vid], 4),
                 "mAP @ 0.95": round(maps_095[vid], 4)
             })
-            
+
         st.dataframe(results, use_container_width=True)

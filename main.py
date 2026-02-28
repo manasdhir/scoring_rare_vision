@@ -132,19 +132,33 @@ It is not intended for external benchmarking outside the official competition fr
 - 📄 ICPR 2026 RARE-VISION Competition Document & Flyer (includes sample report format):  
   https://figshare.com/articles/preprint/ICPR_2026_RARE-VISION_Competition_Document_and_Flyer/30884858?file=60375365  
 
+- 📝 Sample Report Template (Overleaf format):  
+  https://www.overleaf.com/read/dtndgkgttbyf#4d042f  
+
 - 💻 Official GitHub Repository (scripts + JSON generation utilities):  
   https://github.com/RAREChallenge2026/RARE-VISION-2026-Challenge  
 
 ---
 
 After computing the mAP scores using this tool,  
-📑 **please refer to the Sample Report format provided in the competition document (see link above)** and include your calculated:
+📑 **please refer to the Sample Report template (Overleaf link above)** and include your calculated:
 
 - Overall mAP @ 0.5  
 - Overall mAP @ 0.95  
 - Per-video mAP breakdown  
 
 exactly as specified in the official template.
+
+---
+
+### 📩 External Usage Policy
+
+This evaluator is strictly provided for participants of the ICPR 2026 RARE-VISION Competition.
+
+If you wish to use this evaluator, dataset, or evaluation protocol **for external research, benchmarking, or commercial purposes**,  
+please contact the organizing team for written permission prior to use.
+
+Unauthorized redistribution or external benchmarking is not permitted.
 """)
 
 
